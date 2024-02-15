@@ -4,10 +4,89 @@
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
 }
 
-.title-fonts - фон заголовка текста
+.title-fonts 
+/* - фон заголовка текста */
 
-.body-section-style - стиль заголовков в боди
+.body-section-style 
+/* - стиль заголовков в боди */
 
-.title-fonts-third-section - стиль 4 блока заголовка, не жирный
+.title-fonts-third-section 
+/* - стиль 4 блока заголовка, не жирный */
 
-.fourth-section-img - картинки 
+.fourth-section {
+  margin-block-end: 40px;
+  padding-inline-start: 10px;
+  padding-inline-end: 10px;
+
+  @media (min-width: 768px) {
+    margin-block-end: 60px;
+    padding-inline-start: 20px;
+    padding-inline-end: 20px;
+  }
+}
+
+.section__picture-header {
+  margin-block-end: 10px;
+
+  @media (min-width: 768px) {
+    margin-block-end: 20px;
+  }
+}
+
+.img-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  max-width: 648px;
+  margin-inline-start: auto;
+  margin-inline-end: auto;
+
+  @media (min-width: 768px) {
+    display: grid;
+    gap: 20px;
+    min-width: 100%;
+
+    .sunset-img {
+      grid-column: 1 / span 2;
+      grid-row: 1;
+      width: 649px;
+      height: 260px;
+      object-fit: cover;
+    }
+
+    .ice-cream-img {
+      grid-column: 3;
+      grid-row: 1 / span 2;
+      width: 315px;
+      height: 595px;
+      object-fit: cover;
+    }
+
+    .hipster-casset-img {
+      grid-column: 1;
+      grid-row: 2 / span 2;
+      width: 315px;
+      height: 768px;
+      object-fit: cover;
+    }
+
+    .books-img {
+      grid-column: 2;
+      grid-row: 2;
+      width: 315px;
+      height: 315px;
+      object-fit: cover;
+    }
+
+    .street-img {
+      grid-column: 2 / span 2;
+      grid-row: 3;
+      width: 649px;
+      height: 428px;
+      object-fit: cover;
+    }
+  }
+}
+
+
