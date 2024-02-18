@@ -7,17 +7,15 @@
 .page.theme_dark {
   --accent-color: #FF0070;
   --text-color: #F1B2CE;
-  --bg-image: url(../images/cover-image-dark.png);
-  --accent-title: #DB00FF;
+  --color-title: #DB00FF;
   --dec-text: #000028;
   --bg-color: #000028;
-  --accent-section: #FF0070;
-  --dec-bg: #FF0070;
+  --bottom-color: #FF0070;
+  --header-bg: #FF0070;
   --hover: rgba(255, 0, 112, 0.40);
 }
 
 .page.theme_dark .rec-style {
   display: block;
 }
-
 
