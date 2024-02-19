@@ -12,7 +12,7 @@
   --dec-text: #353430;
   --bg-color: #FFF1F7;
   --bottom-color: #353430;
-  --header-bg: #FF8DCB;
+  --dec-bg: #FF8DCB;
   --hover: rgba(50, 49, 45, 0.40);
 }
 
@@ -25,7 +25,7 @@
       --dec-text: #353430;
       --bg-color: #FFF1F7;
       --bottom-color: #353430;
-      ----header-bg: #FF8DCB;
+      --dec-bg: #FF8DCB;
       --hover: rgba(54, 53, 48, 0.4);
   } 
 } 
