@@ -215,7 +215,9 @@
 }
 
 .header__theme-menu-button:focus {
-  border: none;
+  border: 1px solid var(--hover);
+  outline: none;
+  }
 }
 
 .header__theme-menu-button:focus-visible {
@@ -233,7 +235,8 @@
 .body-section-style {
   font-size: 18px;
   line-height: 1.3;
-}
+} 
+
 /* стиль загаловка секции */
 .name-paragrph-style {
   margin-block-end: 10px;
@@ -249,15 +252,9 @@
 
 .article-style {
   margin-block-end: 20px;
+  margin-bottom: 0;
+  padding-top: 4px;
 }
-
-/* .article-style .text-paragraph-style:last-child {
-  margin-block-end: 0;
-}
-
-.section .article-style:last-child {
-  margin-block-end: 0;
-} 
 
 /* Начало 1 секции */
 .first-section {
@@ -266,7 +263,7 @@
   margin-block-end: 50px;
   padding-inline-start: 10px;
   padding-inline-end: 10px;
-
+  
   /* стили для элемента при ширине экрана не менее 768px */
   @media (min-width: 768px) {
     flex-direction: row;
@@ -280,6 +277,7 @@
 .first-section-body {
   margin-block-end: 20px;
   color: var(--bottom-style);
+  
 
   /* стили для элемента при ширине экрана не менее 768px */
   @media (min-width: 768px) {
@@ -322,6 +320,7 @@
   margin-block-end: 50px;
   padding-inline-start: 10px;
   padding-inline-end: 10px;
+  padding: 60px;
 
   /* стили для элемента при ширине экрана не менее 768px */
   @media (min-width: 768px) {
@@ -389,7 +388,6 @@
   margin-block-end: 50px;
   padding-inline-start: 10px;
   padding-inline-end: 10px;
-
   /* стили для элемента при ширине экрана не менее 768px */
   @media (min-width: 768px) {
     display: flex;
@@ -422,11 +420,16 @@
   margin-block-end: 20px;
 }
 
+.main-style-third-section {
+  margin-top: -70px;
+}
+
 .title-fonts-third-section {
   margin-block-end: 10px;
   font-weight: 400;
   font-size: 18px;
   line-height: 1.3;
+  
 }
 
 /* Картинки */
