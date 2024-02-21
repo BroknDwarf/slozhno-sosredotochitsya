@@ -14,6 +14,7 @@
   margin-block-end: 40px;
   padding-inline-start: 10px;
   padding-inline-end: 10px;
+  
 
   /* стили для элемента при ширине экрана не менее 768px */
   @media (min-width: 768px) {
@@ -25,7 +26,7 @@
 
 .fourth-section-body {
   margin-block-end: 10px;
-
+  
   /* стили для элемента при ширине экрана не менее 768px */
   @media (min-width: 768px) {
     margin-block-end: 20px;
@@ -36,7 +37,7 @@
   position: relative;
   display: grid;
   grid-template-rows: 1fr min-content 1fr;
-  height: 100vh;
+  height: 768px;
   min-height: 668px;
   margin-block-end: 40px;
   padding: 10px;
@@ -320,7 +321,7 @@
   margin-block-end: 50px;
   padding-inline-start: 10px;
   padding-inline-end: 10px;
-  padding: 60px;
+  
 
   /* стили для элемента при ширине экрана не менее 768px */
   @media (min-width: 768px) {
@@ -332,6 +333,7 @@
 
 .second-section-body {
   margin-block-end: 20px;
+  margin-top: -10px;
   /* цвет текста через переменную */
   color: var(--bottom-style);
 
@@ -400,6 +402,7 @@
 
 .third-section-body {
   margin-block-end: 20px;
+  margin-top: -10px;
   /* цвет текста через переменную */
   color: var(--bottom-style);
 
@@ -421,7 +424,7 @@
 }
 
 .main-style-third-section {
-  margin-top: -70px;
+  margin-top: -10px;
 }
 
 .title-fonts-third-section {
@@ -429,14 +432,13 @@
   font-weight: 400;
   font-size: 18px;
   line-height: 1.3;
-  
+  margin-block-start: 5px;
 }
 
 /* Картинки */
 
 .fourth-section-body {
   margin-block-end: 10px;
-
   @media (min-width: 768px) {
     margin-block-end: 20px;
   }
@@ -512,8 +514,8 @@
   position: relative;
   display: grid;
   height: 100vh;
-  min-height: 668px;
-  padding: 10px;
+  min-height: 768px;
+  
 
   /* При ширине экрана не менее 768px устанавливается другое значение отступа */
   @media (min-width: 768px) {
