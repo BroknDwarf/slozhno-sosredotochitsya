@@ -4,47 +4,21 @@
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
   font-family: "IBM Plex Mono", monospace;
   background-color: var(--bg-color);
+  background-image: var(--bg-image);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
 }
 
-.fourth-section {
-  margin-block-end: 40px;
-  padding-inline-start: 10px;
-  padding-inline-end: 10px;
-  
-
-  /* стили для элемента при ширине экрана не менее 768px */
-  @media (min-width: 768px) {
-    margin-block-end: 60px;
-    padding-inline-start: 20px;
-    padding-inline-end: 20px;
-  }
-}
-
-.fourth-section-body {
-  margin-block-end: 10px;
-  
-  /* стили для элемента при ширине экрана не менее 768px */
-  @media (min-width: 768px) {
-    margin-block-end: 20px;
-  }
-}
-
 .header {
   position: relative;
   display: grid;
   grid-template-rows: 1fr min-content 1fr;
-  height: 768px;
+  height: 100vh;
   min-height: 668px;
   margin-block-end: 40px;
   padding: 10px;
-  background-image: var(--bg-image);
-  background-size: cover;
-  background-position: center;
-  width: 100%;
 
   /* стили для элемента при ширине экрана не менее 768px */
   @media (min-width: 768px) {
@@ -134,6 +108,7 @@
   @media (min-width: 1024px) {
     justify-self: center;
     align-self: self-start;
+    /* margin-block-start: -25px; */
   }
 }
 
@@ -181,13 +156,16 @@
 }
 /*Конец Стили заголовка страницы */
 
-/*Начало Общие стили проекта*/
 .title-fonts {
   color: var(--dec-text);
   background-color: var(--dec-bg);
 }
 
-/*Конец Общие стили проекта*/
+.section-text {
+  margin-block-end: 10px; 
+  font-size: 18px;
+}
+
 .header__theme-menu-list {
   display: flex;
   flex-direction: column;
@@ -219,7 +197,6 @@
   border: 1px solid var(--hover);
   outline: none;
   }
-}
 
 .header__theme-menu-button:focus-visible {
   border-block-end: 1px solid var(--bottom-style);
@@ -229,21 +206,20 @@
 .header__theme-menu-button_active {
   border: 1px solid var(--bottom-style);
   pointer-events: none;
+  padding-top: 0;
 }
-/* Общие стили к секциям */
 
-/* стиль тела секции */
 .body-section-style {
   font-size: 18px;
   line-height: 1.3;
 } 
 
-/* стиль загаловка секции */
+
 .name-paragrph-style {
   margin-block-end: 10px;
   font-size: 18px;
 }
-/* стиль текста секции */
+
 .text-paragraph-style {
   margin-block-end: 10px;
   color: var(--text-color);
@@ -253,8 +229,15 @@
 
 .article-style {
   margin-block-end: 20px;
-  margin-bottom: 0;
-  padding-top: 4px;
+  
+}
+
+.article-style .text-paragraph-style:last-child {
+  margin-block-end: 0;
+}
+
+section .article-style:last-child {
+  margin-block-end: 0;
 }
 
 /* Начало 1 секции */
@@ -315,7 +298,7 @@
   outline: none;
 }
 
-/* начало второй  секции */
+/* начало 2 секции */
 
 .second-section {
   margin-block-end: 50px;
@@ -333,7 +316,6 @@
 
 .second-section-body {
   margin-block-end: 20px;
-  margin-top: -10px;
   /* цвет текста через переменную */
   color: var(--bottom-style);
 
@@ -402,7 +384,6 @@
 
 .third-section-body {
   margin-block-end: 20px;
-  margin-top: -10px;
   /* цвет текста через переменную */
   color: var(--bottom-style);
 
@@ -423,22 +404,31 @@
   margin-block-end: 20px;
 }
 
-.main-style-third-section {
-  margin-top: -10px;
-}
-
 .title-fonts-third-section {
   margin-block-end: 10px;
   font-weight: 400;
   font-size: 18px;
   line-height: 1.3;
-  margin-block-start: 5px;
 }
 
 /* Картинки */
 
+.fourth-section {
+  margin-block-end: 40px;
+  padding-inline-start: 10px;
+  padding-inline-end: 10px;
+
+  /* стили для элемента при ширине экрана не менее 768px */
+  @media (min-width: 768px) {
+    margin-block-end: 60px;
+    padding-inline-start: 20px;
+    padding-inline-end: 20px;
+  }
+}
+
 .fourth-section-body {
   margin-block-end: 10px;
+
   @media (min-width: 768px) {
     margin-block-end: 20px;
   }
@@ -462,51 +452,36 @@
     .sunset-img {
       grid-column: 1 / span 2;
       grid-row: 1;
-      max-width: 100%;
-      height: auto;
-      object-fit: cover;
     }
 
     .ice-cream-img {
       grid-column: 3;
       grid-row: 1 / span 2;
-      max-width: 100%;
-      height: auto;
-      object-fit: cover;
       align-self: stretch;
     }
 
     .hipster-casset-img {
       grid-column: 1;
       grid-row: 2 / span 2;
-      max-width: 100%;
-      height: auto;
-      object-fit: cover;
       align-self: stretch;
     }
 
     .books-img {
       grid-column: 2;
       grid-row: 2;
-      max-width: 100%;
-      height: auto;
-      object-fit: cover;
     }
 
     .street-img {
       grid-column: 2 / span 2;
       grid-row: 3;
-      max-width: 100%;
-      height: auto;
-      object-fit: cover;
-      align-self: stretch;
     }
   }
 }
 
 .img-block img {
   width: 100%;
-  height: auto;
+  object-fit: cover;
+  object-position: center;
 }
 
 /* Подвал */
@@ -514,8 +489,8 @@
   position: relative;
   display: grid;
   height: 100vh;
-  min-height: 768px;
-  
+  min-height: 668px;
+  padding: 10px;
 
   /* При ширине экрана не менее 768px устанавливается другое значение отступа */
   @media (min-width: 768px) {
